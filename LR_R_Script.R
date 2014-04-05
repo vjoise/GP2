@@ -39,13 +39,13 @@ dev.off()
 ######################################################################################################
 
 ######################################################################################################
-#Player regresion analysis on salary vs points parameter
+#Player regresion analysis on Salary vs Rebounds parameter
 
 player_sal_reg <- lm(player_salary$salary ~ player_salary$PLAYER_SEASON_STATS_DRB 
                                           + player_salary$PLAYER_SEASON_STATS_ORB, player_salary)
 summary(player_sal_reg)
 
-#Plot the trend of PTS vs salary
+#Plot the trend of Rebounds vs salary
 png('~/GP-2/GP-2/TRB-Salary.png')
 plot(player_salary$PLAYER_SEASON_STATS_PTS, player_salary$salary, xlab='Defensive + Offensive Rebounds',ylab='Salary')
 abline(player_sal_reg)
