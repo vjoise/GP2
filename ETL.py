@@ -1,0 +1,1 @@
+sqlite3 -header -csv Assignment.db < player_salary.sql > player_salary.csv
