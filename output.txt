@@ -1,0 +1,257 @@
+
+Call:
+lm(formula = player_salary$salary ~ player_salary$PLAYER_SEASON_STATS_PTS + 
+    player_salary$PLAYER_SEASON_STATS_FG + player_salary$PLAYER_SEASON_STATS_TRB, 
+    data = player_salary)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-6688505 -2256475  -801596  1054047 17072644 
+
+Coefficients:
+                                      Estimate Std. Error t value Pr(>|t|)  
+(Intercept)                            1019543     462886   2.203   0.0289 *
+player_salary$PLAYER_SEASON_STATS_PTS     4046       4295   0.942   0.3474  
+player_salary$PLAYER_SEASON_STATS_FG      1109      12384   0.090   0.9287  
+player_salary$PLAYER_SEASON_STATS_TRB     1227       2028   0.605   0.5460  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 3835000 on 184 degrees of freedom
+Multiple R-squared:  0.3053,	Adjusted R-squared:  0.294 
+F-statistic: 26.95 on 3 and 184 DF,  p-value: 1.694e-14
+
+null device 
+          1 
+
+Call:
+lm(formula = player_salary$salary ~ player_salary$PLAYER_SEASON_STATS_PTS, 
+    data = player_salary)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-6735225 -2163299  -857314   998751 16968872 
+
+Coefficients:
+                                       Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                           1119975.8   438603.4   2.554   0.0115 *  
+player_salary$PLAYER_SEASON_STATS_PTS    4798.9      533.2   9.000 2.62e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 3819000 on 186 degrees of freedom
+Multiple R-squared:  0.3034,	Adjusted R-squared:  0.2996 
+F-statistic: 81.01 on 1 and 186 DF,  p-value: 2.62e-16
+
+null device 
+          1 
+
+Call:
+lm(formula = player_salary$salary ~ player_salary$PLAYER_SEASON_STATS_FGP, 
+    data = player_salary)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-6632133 -2822287 -1683378  1410533 20668609 
+
+Coefficients:
+                                      Estimate Std. Error t value Pr(>|t|)   
+(Intercept)                           -1128935    1888681  -0.598  0.55074   
+player_salary$PLAYER_SEASON_STATS_FGP 11677553    4100066   2.848  0.00489 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 4480000 on 186 degrees of freedom
+Multiple R-squared:  0.04179,	Adjusted R-squared:  0.03664 
+F-statistic: 8.112 on 1 and 186 DF,  p-value: 0.004893
+
+null device 
+          1 
+
+Call:
+lm(formula = player_salary$salary ~ player_salary$PLAYER_SEASON_STATS_TRB, 
+    data = player_salary)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-8165931 -2269510 -1228431   915231 19191152 
+
+Coefficients:
+                                      Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                            1873052     474838   3.945 0.000113 ***
+player_salary$PLAYER_SEASON_STATS_TRB     8931       1422   6.283  2.3e-09 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 4156000 on 186 degrees of freedom
+Multiple R-squared:  0.1751,	Adjusted R-squared:  0.1706 
+F-statistic: 39.47 on 1 and 186 DF,  p-value: 2.302e-09
+
+Analysis of Variance Table
+
+Response: player_salary$salary
+                                       Df     Sum Sq    Mean Sq F value
+player_salary$PLAYER_SEASON_STATS_TRB   1 6.8189e+14 6.8189e+14   39.47
+Residuals                             186 3.2134e+15 1.7276e+13        
+                                         Pr(>F)    
+player_salary$PLAYER_SEASON_STATS_TRB 2.302e-09 ***
+Residuals                                          
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+null device 
+          1 
+
+Call:
+lm(formula = player_salary$salary ~ player_salary$HEIGHT, data = player_salary)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-4342641 -3011278 -1958639  1113312 20701891 
+
+Coefficients:
+                     Estimate Std. Error t value Pr(>|t|)
+(Intercept)            -47454    7304203  -0.006    0.995
+player_salary$HEIGHT    21291      36843   0.578    0.564
+
+Residual standard error: 4572000 on 186 degrees of freedom
+Multiple R-squared:  0.001792,	Adjusted R-squared:  -0.003574 
+F-statistic: 0.334 on 1 and 186 DF,  p-value: 0.564
+
+Analysis of Variance Table
+
+Response: player_salary$salary
+                      Df     Sum Sq    Mean Sq F value Pr(>F)
+player_salary$HEIGHT   1 6.9813e+12 6.9813e+12   0.334  0.564
+Residuals            186 3.8883e+15 2.0905e+13               
+null device 
+          1 
+
+Call:
+lm(formula = player_salary$salary ~ player_salary$experience, 
+    data = player_salary)
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-13773387  -1518373   -523095   1324180   8431103 
+
+Coefficients:
+                         Estimate Std. Error t value Pr(>|t|)    
+(Intercept)              -2198396     460366  -4.775  3.9e-06 ***
+player_salary$experience  1157164      71578  16.167  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2858000 on 167 degrees of freedom
+  (19 observations deleted due to missingness)
+Multiple R-squared:  0.6101,	Adjusted R-squared:  0.6078 
+F-statistic: 261.4 on 1 and 167 DF,  p-value: < 2.2e-16
+
+null device 
+          1 
+
+Call:
+lm(formula = player_salary$salary ~ player_salary$AGE, data = player_salary)
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-10299559  -2345943   -777314   1502123  14087823 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)       -17991478    2380689  -7.557 2.59e-12 ***
+player_salary$AGE    820283      86820   9.448  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 3695000 on 167 degrees of freedom
+  (19 observations deleted due to missingness)
+Multiple R-squared:  0.3483,	Adjusted R-squared:  0.3444 
+F-statistic: 89.27 on 1 and 167 DF,  p-value: < 2.2e-16
+
+Analysis of Variance Table
+
+Response: player_salary$salary
+                   Df     Sum Sq    Mean Sq F value    Pr(>F)    
+player_salary$AGE   1 1.2189e+15 1.2189e+15  89.267 < 2.2e-16 ***
+Residuals         167 2.2803e+15 1.3654e+13                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+null device 
+          1 
+
+Call:
+lm(formula = player_salary$salary ~ player_salary$AGE + player_salary$PLAYER_SEASON_STATS_PTS, 
+    data = player_salary)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-8211393 -1987474  -515712  1428098 10509530 
+
+Coefficients:
+                                        Estimate Std. Error t value Pr(>|t|)
+(Intercept)                           -1.721e+07  1.960e+06  -8.778 1.96e-15
+player_salary$AGE                      6.879e+05  7.292e+04   9.434  < 2e-16
+player_salary$PLAYER_SEASON_STATS_PTS  4.104e+03  4.565e+02   8.990 5.37e-16
+                                         
+(Intercept)                           ***
+player_salary$AGE                     ***
+player_salary$PLAYER_SEASON_STATS_PTS ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 3039000 on 166 degrees of freedom
+  (19 observations deleted due to missingness)
+Multiple R-squared:  0.5617,	Adjusted R-squared:  0.5564 
+F-statistic: 106.4 on 2 and 166 DF,  p-value: < 2.2e-16
+
+Analysis of Variance Table
+
+Response: player_salary$salary
+                                       Df     Sum Sq    Mean Sq F value
+player_salary$AGE                       1 1.2189e+15 1.2189e+15 131.933
+player_salary$PLAYER_SEASON_STATS_PTS   1 7.4666e+14 7.4666e+14  80.821
+Residuals                             166 1.5336e+15 9.2385e+12        
+                                         Pr(>F)    
+player_salary$AGE                     < 2.2e-16 ***
+player_salary$PLAYER_SEASON_STATS_PTS 5.368e-16 ***
+Residuals                                          
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+null device 
+          1 
+
+Call:
+lm(formula = player_salary$salary ~ player_salary$experience + 
+    player_salary$position, data = player_salary)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-8948106 -1332415  -340514   809515  7290506 
+
+Coefficients:
+                         Estimate Std. Error t value Pr(>|t|)    
+(Intercept)              -2402294     774132  -3.103  0.00268 ** 
+player_salary$experience  1289933     105773  12.195  < 2e-16 ***
+player_salary$positionPF  -572633     942912  -0.607  0.54544    
+player_salary$positionPG  -267523     814927  -0.328  0.74359    
+player_salary$positionSF   634386    1020542   0.622  0.53603    
+player_salary$positionSG  -376991     993673  -0.379  0.70544    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2733000 on 77 degrees of freedom
+  (14 observations deleted due to missingness)
+Multiple R-squared:  0.6673,	Adjusted R-squared:  0.6457 
+F-statistic: 30.89 on 5 and 77 DF,  p-value: < 2.2e-16
+
+Analysis of Variance Table
+
+Response: player_salary$salary
+                         Df     Sum Sq    Mean Sq  F value Pr(>F)    
+player_salary$experience  1 1.1427e+15 1.1427e+15 153.0121 <2e-16 ***
+player_salary$position    4 1.0700e+13 2.6751e+12   0.3582 0.8376    
+Residuals                77 5.7505e+14 7.4682e+12                    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+null device 
+          1 
